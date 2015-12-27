@@ -1,0 +1,50 @@
+Goniometric Demo Application
+========================================================
+author: Tomas Lancinger
+date: 27 Dec 2015
+font-family:"Helvetica"
+
+
+Goniometric Demo Application
+========================================================
+This presentation has been created as part of the peer
+assignment of Developing Data Products course.
+
+The aim is to make an application in Shiny, complying with following requirements:
+
+- Some form of input (widget: textbox, radio button, checkbox, ...)
+- Some operation on the ui input in sever.R
+- Some reactive output displayed as a result of server calculations
+
+The first requirement is handled by parametrization panel on below, the second and third
+requirements are fulfilled by gonimetric function selection and computation on server side.
+
+The Application
+========================================================
+The application visualizes goniometric functions sin and cos similarly as depicted below:
+
+```{r}
+t = seq(0,10,.01)
+plot(t, 
+     type="l", 
+     sin(t), 
+     xlab="x", 
+     ylab="Function chart")
+```
+
+The Data
+========================================================
+No external data sets are required.
+
+However, the applications permits to change dynamically 
+- type of gonimetric function (sine or cosine)
+- frequency
+- amplitude
+
+References
+========================================================
+Are you interested in the application?
+
+Here are the important links:
+- link to application: https://lancing.shinyapps.io/gonioDemoApp
+- link to GitHub: https://github.com/lantom/GoniometricDemoApp
